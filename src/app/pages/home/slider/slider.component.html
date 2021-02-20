@@ -1,0 +1,9 @@
+<div class="slider-container">
+  <div class="slides" #slides>
+    <ng-content select="[appSliderItem]" #sliderItem></ng-content>
+  </div>
+  <div class="controls">
+    <button (click)="onClickLeft()"><img src="assets/icon/icons-left.png"></button>
+    <button (click)="onClickRight()"><img src="assets/icon/icons-right.png"></button>
+  </div>
+</div>

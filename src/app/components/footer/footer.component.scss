@@ -1,0 +1,100 @@
+.footer {
+  margin-left: 100px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .footer-block-title {
+    padding: 0 20px;
+
+    .footer-title {
+      color: #212529;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer-title-icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .footer-icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-block {
+    padding: 0 20px;
+    margin-top: 0;
+
+    p {
+      color: #212529;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .footer-play {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    .play-store {
+      max-width: 150px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    select {
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 8px 0;
+
+      option {
+        border: none;
+      }
+    }
+
+    select:active,
+    select:focus {
+      outline: none;
+    }
+  }
+}
+
+.footer-block {
+  margin-top: 20px;
+  .footer-block-text {
+    color: #bebebe;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 746px) {
+  .footer {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 747px) and (max-width: 816px) {
+  .footer {
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 817px) and (max-width: 955px) {
+  .footer {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+}

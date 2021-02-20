@@ -1,0 +1,41 @@
+<nav [class.nav-menu]="isOpen === true">
+  <div class="header-block-category">
+    <p class="header-category active">Home</p>
+    <p class="header-category">Sell Car</p>
+    <p class="header-category">Buy Car</p>
+    <p class="header-category">Market</p>
+    <p class="header-category">Contact Us</p>
+  </div>
+
+  <div class="header-block-content">
+    <button class="header-button"><img src="assets/icon/car-icon.svg"></button>
+    <button class="header-button"><img src="assets/icon/star.svg"></button>
+    <button class="header-button signin"><img src="assets/icon/person.svg"> Sign in</button>
+    <button class="signup">Sign up</button>
+  </div>
+</nav>
+
+<div class="header">
+  <div class="header-block-title" (click)="closeMenu()">
+    <p class="header-title">auto.market</p>
+  </div>
+
+  <div class="header-block-category">
+    <p class="header-category active">Home</p>
+    <p class="header-category">Sell Car</p>
+    <p class="header-category">Buy Car</p>
+    <p class="header-category">Market</p>
+    <p class="header-category">Contact Us</p>
+  </div>
+
+  <div class="header-block-content">
+    <button class="header-button"><img src="assets/icon/car-icon.svg"></button>
+    <button class="header-button"><img src="assets/icon/star.svg"></button>
+    <button class="header-button signin"><img src="assets/icon/person.svg"> Sign in</button>
+    <button class="signup">Sign up</button>
+  </div>
+
+  <label class="header-menu" (click)="onMenu()">
+    <img src="assets/icon/border-width.svg">
+  </label>
+</div>

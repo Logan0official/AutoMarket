@@ -1,0 +1,429 @@
+<div class="content">
+  <div class="header">
+    <p class="header-text">Marketplace for buyers and sellers who love cars</p>
+    <h2 class="header-title">Find your next car here</h2>
+
+    <div class="header-card">
+      <div class="card-container">
+        <div class="place">
+          <label for="place"><img src="assets/icon/geo-alt.svg"></label>
+          <select name="place" id="map">
+            <option value="toronto">Toronto (+100km)</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+
+        <div class="cars">
+          <label for="cars"><img src="assets/icon/car-icon.svg"></label>
+          <select id="cars" name="cars" required>
+            <option value="" disabled selected>Brand and model</option>
+            <option>Acura</option>
+            <option>Alfa Romeo</option>
+            <option>Aston Martin</option>
+            <option>Audi</option>
+            <option>Bentley</option>
+            <option>BMW</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="number">
+          <label for="namber"><img src="assets/icon/wallet-fill.svg"></label>
+          <input type="number" value="0" min="0">
+        </div>
+        <button class="header-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="body-header">
+      <p class="body-header-text">Market status</p>
+
+      <div class="body-header-card" id="slide">
+        <img class="card-img" src="assets/images/m5.jpg">
+      </div>
+      <div class="body-header-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="body-content">
+      <p class="body-content-title">Continue your search</p>
+      <p class="body-content-text">All makes, +1 filter</p>
+      <div class="body-content-carousel">
+        <app-slider>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image082.png">
+                <p class="card-km">85,000 km</p>
+                <p class="card-price">$8 300</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image085.png">
+                <p class="card-km">67,000 km</p>
+                <p class="card-price">$12 500</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image086.png">
+                <p class="card-km">42,000 km</p>
+                <p class="card-price">$11 300</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image082.png">
+                <p class="card-km">85,000 km</p>
+                <p class="card-price">$8 300</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image087.png">
+                <p class="card-km">33,000 km</p>
+                <p class="card-price">$8 750</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image084.png">
+                <p class="card-km">28,000 km</p>
+                <p class="card-price">$19 500</p>
+              </div>
+            </div>
+          </div>
+          <div appSliderItem>
+            <div class="carousel-card">
+              <div class="card">
+                <img src="assets/images/image084.png">
+                <p class="card-km">28,000 km</p>
+                <p class="card-price">$19 500</p>
+              </div>
+            </div>
+          </div>
+        </app-slider>
+      </div>
+      <div class="body-content-tabs">
+        <div class="tabs">
+          <input type="radio" name="tab" id="tab-1" value="">
+          <label for="tab-1">Most selling</label>
+          <input type="radio" name="tab" id="tab-2" value="" checked>
+          <label for="tab-2">Best selling</label>
+          <input type="radio" name="tab" id="tab-3" value="">
+          <label for="tab-3">Most visited</label>
+        </div>
+
+        <div id="content-1">
+          <!-- <app-slider>
+            <div appSliderItem>
+            </div>
+          </app-slider> -->
+        </div>
+        <div id="content-2">
+          <app-slider>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image1.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">BMW series 5</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image2.png">
+                  <p class="card-year">2018</p>
+                  <p class="card-name">Chevrolett Express Cargo</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image3.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">Toyota Prius AWD</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image4.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">Ford F-150</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image6.png">
+                  <p class="card-year">2020</p>
+                  <p class="card-name">Ford Mustang GT</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image1.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">BMW series 5</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-slider>
+        </div>
+        <div id="content-3">
+          <!-- <app-slider>
+            <div appSliderItem>
+            </div>
+          </app-slider> -->
+        </div>
+      </div>
+
+      <div class="body-type">
+        <div class="body-title-block">
+          <p class="body-title">Browse by body type</p>
+          <p class="body-text">Show all <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+          </p>
+        </div>
+
+        <div class="type-content">
+          <div class="card-type">
+            <img class="type" src="assets/images/image01.png">
+            <p class="name-type">Sedan</p>
+          </div>
+          <div class="card-type">
+            <img class="type" src="assets/images/image02.png">
+            <p class="name-type">SUV / Crossover</p>
+          </div>
+          <div class="card-type">
+            <img class="type" src="assets/images/image03.png">
+            <p class="name-type">Pickup</p>
+          </div>
+          <div class="card-type">
+            <img class="type" src="assets/images/image04.png">
+            <p class="name-type">Coupe</p>
+          </div>
+          <div class="card-type">
+            <img class="type" src="assets/images/image05.png">
+            <p class="name-type">Hatchback</p>
+          </div>
+          <div class="card-type">
+            <img class="type" src="assets/images/image06.png">
+            <p class="name-type">Van</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-popular">
+        <div class="body-title-block">
+          <p class="body-title">Browse by body type</p>
+          <div class="place">
+            <label for="place"><img src="assets/icon/geo-alt.svg"></label>
+            <select name="place" id="map">
+              <option value="toronto">Toronto (+100km)</option>
+              <option value="">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="popular-content">
+          <app-slider>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image5.png">
+                  <p class="card-year">2020</p>
+                  <p class="card-name">Honda Civic Hatchback</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image6.png">
+                  <p class="card-year">2020</p>
+                  <p class="card-name">Ford Mustang GT</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image7.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">Toyota RAV4 AWD</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image8.png">
+                  <p class="card-year">2020</p>
+                  <p class="card-name">Honda CR V Hybrid</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image4.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">Ford F-150</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="carousel-card">
+                <div class="card">
+                  <img class="card-img" src="assets/images/image7.png">
+                  <p class="card-year">2019</p>
+                  <p class="card-name">Toyota RAV4 AWD</p>
+                  <div class="card-hide">
+                    <p>4 651 offers <img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </app-slider>
+        </div>
+      </div>
+
+      <div class="body-makes">
+        <p class="body-title">Popular makes</p>
+
+        <div class="popular-makes">
+          <app-slider>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image023.png">
+                <p class="name-type">Peugeot</p>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image018.png">
+                <p class="name-type">Volkswagen</p>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image019.png">
+                <p class="name-type">Hyundai</p>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image021.png">
+                <p class="name-type">Renault</p>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image020.png">
+                <p class="name-type">Kia Motors</p>
+              </div>
+            </div>
+            <div appSliderItem>
+              <div class="card-type">
+                <img class="type" src="assets/images/image022.png">
+                <p class="name-type">Toyota</p>
+              </div>
+            </div>
+          </app-slider>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+
